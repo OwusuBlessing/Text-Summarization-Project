@@ -5,3 +5,10 @@ data_ingestion:
   source_URL: https://github.com/OwusuBlessing/Text-Summarization-Project/raw/master/samsum_dataset-20231120T200002Z-001.zip
   local_data_file: Artifacts/data_ingestion/data.zip
   unzip_dir: Artifacts/data_ingestion
+
+data_validation:
+  root_dir: Artifacts/data_validation
+  STATUS_FILE: Artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train","test","validation"]
+
+

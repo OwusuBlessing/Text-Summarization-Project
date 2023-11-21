@@ -33,3 +33,52 @@ Source-Age: 0
 [2023-11-21 17:49:03,861: INFO: main: >>>>> stage Data Ingestion Pipeline completed <<<<<<<
 
 x============x]
+[2023-11-21 22:38:33,130: INFO: common: Directory Artifacts created]
+[2023-11-21 22:38:33,134: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-21 22:38:46,141: INFO: common: Directory Artifacts created]
+[2023-11-21 22:38:46,146: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-21 22:40:05,097: INFO: common: Directory Artifacts created]
+[2023-11-21 22:40:05,100: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-21 22:40:41,832: INFO: common: Directory Artifacts created]
+[2023-11-21 22:40:41,835: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-21 22:41:35,332: INFO: common: Directory Artifacts created]
+[2023-11-21 22:41:35,336: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-21 23:32:04,064: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-21 23:32:04,078: INFO: common: Directory Artifacts created]
+[2023-11-21 23:32:04,080: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 23:32:07,504: INFO: data_ingestion: Artifacts/data_ingestion/data.zip downloaded! with the following info: 
+Connection: close
+Content-Length: 4238242
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "319957fe3a5528ddaeb87f6bf17ea31208cd7de1f34b7b22d258a034c2094298"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: F92C:5EBE:109B2DF:1142605:655D2FE6
+Accept-Ranges: bytes
+Date: Tue, 21 Nov 2023 22:32:06 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200084-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700605926.282155,VS0,VE443
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f91d9f8ba4ffbfa9664765047e0724e680dc40f9
+Expires: Tue, 21 Nov 2023 22:37:06 GMT
+Source-Age: 0
+
+]
+[2023-11-21 23:32:07,631: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x============x]
+[2023-11-21 23:32:07,631: INFO: main: >>>>> stage Data Validation Stage started]
+[2023-11-21 23:32:07,634: INFO: common: Directory Artifacts created]
+[2023-11-21 23:32:07,637: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-21 23:32:07,642: INFO: main: >>>>> stage Data Validation Stage completed <<<<<<<
+
+x============x]
