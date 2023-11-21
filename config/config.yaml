@@ -1,0 +1,7 @@
+artifact_root: Artifacts
+
+data_ingestion:
+  root_dir: Artifacts/data_ingestion
+  source_URL: https://github.com/OwusuBlessing/Text-Summarization-Project/raw/master/samsum_dataset-20231120T200002Z-001.zip
+  local_data_file: Artifacts/data_ingestion/data.zip
+  unzip_dir: Artifacts/data_ingestion

@@ -1,0 +1,65 @@
+[2023-11-21 11:56:23,466: ERROR: common: [Errno 2] No such file or directory: 'config\\config.yaml']
+[2023-11-21 12:01:22,363: INFO: common: Directory artifacts created]
+[2023-11-21 12:01:22,368: INFO: common: Directory artifacts/data_ingestion created]
+[2023-11-21 12:01:39,342: INFO: 4137640121: artifacts/data_ingestion/data.zip downloaded! with the following info: 
+Connection: close
+Content-Length: 4238242
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "319957fe3a5528ddaeb87f6bf17ea31208cd7de1f34b7b22d258a034c2094298"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3CE6:9D28:98BBC3:9F5925:655C8E04
+Accept-Ranges: bytes
+Date: Tue, 21 Nov 2023 11:01:29 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lon4262-LON
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700564488.697171,VS0,VE1385
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a7ecefa0e48f77b6e6a646eee321689a9c5da8ac
+Expires: Tue, 21 Nov 2023 11:06:29 GMT
+Source-Age: 1
+
+]
+[2023-11-21 12:02:29,859: INFO: common: Directory artifacts created]
+[2023-11-21 12:02:29,864: INFO: common: Directory artifacts/data_ingestion created]
+[2023-11-21 12:02:29,864: INFO: 2076268543: file already exists of size: ~4139 KB]
+[2023-11-21 12:02:55,843: INFO: common: Directory artifacts created]
+[2023-11-21 12:02:55,845: INFO: common: Directory artifacts/data_ingestion created]
+[2023-11-21 12:02:55,848: INFO: 2325885885: file already exists of size: ~4139 KB]
+[2023-11-21 12:09:33,702: INFO: common: Directory Artifacts created]
+[2023-11-21 12:09:33,706: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:09:33,710: INFO: 2325885885: file already exists of size: ~4139 KB]
+[2023-11-21 12:10:00,184: INFO: common: Directory Artifacts created]
+[2023-11-21 12:10:00,187: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:10:00,189: INFO: 2325885885: file already exists of size: ~4139 KB]
+[2023-11-21 12:10:57,491: INFO: common: Directory Artifacts created]
+[2023-11-21 12:10:57,494: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:10:57,497: INFO: 2325885885: file already exists of size: ~4139 KB]
+[2023-11-21 12:11:52,773: INFO: common: Directory Artifacts created]
+[2023-11-21 12:11:52,776: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:11:52,778: INFO: 2325885885: file already exists of size: ~4139 KB]
+[2023-11-21 12:14:36,337: INFO: common: Directory Artifacts created]
+[2023-11-21 12:14:36,340: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:14:36,342: INFO: 1306333481: file already exists of size: ~4139 KB]
+[2023-11-21 12:14:36,344: INFO: 1306333481: Extracting zopfile]
+[2023-11-21 12:14:45,833: INFO: common: Directory Artifacts created]
+[2023-11-21 12:14:45,835: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:14:45,837: INFO: 1888421556: file already exists of size: ~4139 KB]
+[2023-11-21 12:14:45,840: INFO: 1888421556: Extracting zopfile]
+[2023-11-21 12:14:46,068: INFO: 1888421556: Zip file extracted]
+[2023-11-21 12:15:48,894: INFO: common: Directory Artifacts created]
+[2023-11-21 12:15:48,897: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:15:48,900: INFO: 773296550: file already exists of size: ~4139 KB]
+[2023-11-21 12:15:48,901: INFO: 773296550: Extracting zopfile]
+[2023-11-21 12:15:49,123: INFO: 773296550: Zip file extracted at Artifacts/data_ingestion]
+[2023-11-21 12:16:32,125: INFO: common: Directory Artifacts created]
+[2023-11-21 12:16:32,128: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-21 12:16:32,130: INFO: 2337483636: file already exists of size: ~4139 KB]
