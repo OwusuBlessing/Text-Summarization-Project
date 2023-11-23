@@ -5,6 +5,7 @@ import zipfile
 from TextSummarizer.logging import logger
 from TextSummarizer.utils.common import get_size
 from TextSummarizer.entity import DataIngestionConfig
+from pathlib import Path
 
 class DataIngestion:
     def __init__(self ,config :DataIngestionConfig):
@@ -23,6 +24,7 @@ class DataIngestion:
         extracts zip file into data directory
         function returns None
         """
+
         unzip_path = self.config.unzip_dir
         os.makedirs(
             unzip_path ,exist_ok=True
@@ -30,7 +32,4 @@ class DataIngestion:
 
         with zipfile.ZipFile(self.config.local_data_file ,"r") as zip_ref:
             zip_ref.extractall(unzip_path)
-
-
-
 

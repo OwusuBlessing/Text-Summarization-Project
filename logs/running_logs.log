@@ -82,3 +82,251 @@ x============x]
 [2023-11-21 23:32:07,642: INFO: main: >>>>> stage Data Validation Stage completed <<<<<<<
 
 x============x]
+[2023-11-22 19:27:05,217: INFO: common: Directory Artifacts created]
+[2023-11-22 19:27:05,219: INFO: common: Directory Artifacts/data_transformation created]
+[2023-11-22 19:45:20,921: INFO: common: Directory Artifacts created]
+[2023-11-22 19:45:20,929: INFO: common: Directory Artifacts/data_transformation created]
+[2023-11-22 19:56:53,394: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 19:56:53,399: INFO: common: Directory Artifacts created]
+[2023-11-22 19:56:53,399: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 19:56:53,400: ERROR: main: name 'Path' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 13, in main
+    data_ingestion.download_file()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 19, in download_file
+    logger.info(f"file already exists of size: {get_size(Path(self.config.local_data_file))}")
+NameError: name 'Path' is not defined
+[2023-11-22 19:57:46,726: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 19:57:46,730: INFO: common: Directory Artifacts created]
+[2023-11-22 19:57:46,731: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 19:57:46,732: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 19:57:46,756: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 20:08:30,515: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 20:08:30,519: INFO: common: Directory Artifacts created]
+[2023-11-22 20:08:30,520: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 20:11:46,184: INFO: data_ingestion: Artifacts/data_ingestion/data.zip downloaded! with the following info: 
+Connection: close
+Content-Length: 4238242
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "319957fe3a5528ddaeb87f6bf17ea31208cd7de1f34b7b22d258a034c2094298"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 483A:9526:1B611BC:1C76006:655E51B1
+Accept-Ranges: bytes
+Date: Wed, 22 Nov 2023 19:08:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200126-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700680114.381795,VS0,VE470
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a6ec42fb2613c2179cb329d50193a22591010e64
+Expires: Wed, 22 Nov 2023 19:13:34 GMT
+Source-Age: 0
+
+]
+[2023-11-22 20:11:46,208: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 20:27:50,244: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 20:27:50,249: INFO: common: Directory Artifacts created]
+[2023-11-22 20:27:50,250: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 20:27:50,251: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 20:27:50,256: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 20:37:36,398: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 20:37:36,404: INFO: common: Directory Artifacts created]
+[2023-11-22 20:37:36,405: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 20:37:36,405: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 20:37:36,410: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 20:50:54,350: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 20:50:54,357: INFO: common: Directory Artifacts created]
+[2023-11-22 20:50:54,358: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 20:50:54,358: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 20:50:54,363: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 21:18:49,014: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 21:18:49,018: INFO: common: Directory Artifacts created]
+[2023-11-22 21:18:49,019: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 21:18:49,019: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 21:18:49,023: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 22:02:04,053: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 22:02:04,063: INFO: common: Directory Artifacts created]
+[2023-11-22 22:02:04,064: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 22:02:04,064: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 22:02:04,069: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 33, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 22:17:01,926: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 22:17:01,932: INFO: common: Directory Artifacts created]
+[2023-11-22 22:17:01,933: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 22:17:01,933: INFO: data_ingestion: file already exists of size: ~4139 KB]
+[2023-11-22 22:17:01,942: ERROR: main: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Main-NLP-PROJECTS\Text-Summarization-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.extrac_zipfile()
+  File "c:\users\user\desktop\main-nlp-projects\text-summarization-project\src\TextSummarizer\components\data_ingestion.py", line 34, in extrac_zipfile
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1642, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1696, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'Artifacts\\data_ingestion\\samsum_dataset\\validation\\data-00000-of-00001.arrow'
+[2023-11-22 22:31:04,067: INFO: main: >>>>> stage Data Ingestion Stage started]
+[2023-11-22 22:31:04,088: INFO: common: Directory Artifacts created]
+[2023-11-22 22:31:04,089: INFO: common: Directory Artifacts/data_ingestion created]
+[2023-11-22 22:34:07,750: INFO: data_ingestion: Artifacts/data_ingestion/data.zip downloaded! with the following info: 
+Connection: close
+Content-Length: 4238242
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "319957fe3a5528ddaeb87f6bf17ea31208cd7de1f34b7b22d258a034c2094298"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2F90:A3DC:1727C53:181F7F6:655E731D
+Accept-Ranges: bytes
+Date: Wed, 22 Nov 2023 21:31:10 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200136-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700688670.270395,VS0,VE560
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: d0f70d7a74a2b7c8d479e03b08f055ad089b1370
+Expires: Wed, 22 Nov 2023 21:36:10 GMT
+Source-Age: 0
+
+]
+[2023-11-22 22:34:07,873: INFO: main: >>>>> stage Data Ingestion Stage completed <<<<<<<
+
+x============x]
+[2023-11-22 22:34:07,874: INFO: main: >>>>> stage Data Validation Stage started]
+[2023-11-22 22:34:07,878: INFO: common: Directory Artifacts created]
+[2023-11-22 22:34:07,880: INFO: common: Directory Artifacts/data_validation created]
+[2023-11-22 22:34:07,884: INFO: main: >>>>> stage Data Validation Stage completed <<<<<<<
+
+x============x]
+[2023-11-22 22:34:07,886: INFO: main: >>>>> stage Data Validation Stage started]
+[2023-11-22 22:34:07,892: INFO: common: Directory Artifacts created]
+[2023-11-22 22:34:07,898: INFO: common: Directory Artifacts/data_transformation created]
+[2023-11-22 22:34:19,846: INFO: main: >>>>> stage Data Validation Stage completed <<<<<<<
+
+x============x]
+[2023-11-23 18:34:04,812: INFO: common: Directory Artifacts created]
+[2023-11-23 18:35:16,798: INFO: common: Directory Artifacts created]
+[2023-11-23 18:35:16,804: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 18:36:30,060: INFO: common: Directory Artifacts created]
+[2023-11-23 18:36:30,064: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 18:37:01,792: INFO: common: Directory Artifacts created]
+[2023-11-23 18:37:01,796: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 18:37:25,728: INFO: common: Directory Artifacts created]
+[2023-11-23 18:37:25,731: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 18:38:13,947: INFO: common: Directory Artifacts created]
+[2023-11-23 18:38:13,953: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:06:55,014: INFO: common: Directory Artifacts created]
+[2023-11-23 19:06:55,018: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:08:18,206: INFO: common: Directory Artifacts created]
+[2023-11-23 19:08:18,219: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:11:40,466: INFO: common: Directory Artifacts created]
+[2023-11-23 19:11:40,469: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:15:54,744: INFO: common: Directory Artifacts created]
+[2023-11-23 19:15:54,747: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:17:07,363: INFO: common: Directory Artifacts created]
+[2023-11-23 19:17:07,367: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:19:15,851: INFO: common: Directory Artifacts created]
+[2023-11-23 19:19:15,855: INFO: common: Directory Artifacts/model_trainer created]
+[2023-11-23 19:19:28,181: INFO: common: Directory Artifacts created]
+[2023-11-23 19:19:28,184: INFO: common: Directory Artifacts/model_trainer created]
